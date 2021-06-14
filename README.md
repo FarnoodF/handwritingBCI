@@ -62,10 +62,16 @@ To have the right packages and dependencies, it is recommended that you run the 
 ```console
 virtualenv --python "path/to/python37/exefile" .venv
 ```
+```terminal
+virtualenv --python=python3.7 .venv
+```
 This creates a hidden .venv hidden diretory.
 - Now, activate the virtual environment:
 ```console
 .venv\Scripts\activate
+```
+```terminal
+source .venv\bin\activate
 ```
 - Now, you are in the venv. Go to the requirements.txt directory of the github repo and install all of them: `pip install -r requirements.txt`
 - Now install Jupyter and run `jupyter notebook` and start experimenting with different files.
