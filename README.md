@@ -36,7 +36,7 @@ Following our [manuscript](https://www.nature.com/articles/s41586-021-03506-2), 
 ## Dependencies
 
 - General
-  - python>=3.6 
+  - python>=3.6 and python<=3.7
   - tensorflow=1.15
   - numpy (tested with 1.17)
   - scipy (tested with 1.1.0)
@@ -51,3 +51,22 @@ Following our [manuscript](https://www.nature.com/articles/s41586-021-03506-2), 
   - Bigram language model [files](https://doi.org/10.5061/dryad.wh70rxwmv) 
 - Step 7: GPT-2 Rescoring
   - GPT-2 [model files](https://github.com/openai/gpt-2) (1558M version)
+
+## Running in Virtualenv
+
+To have the right packages and dependencies, it is recommended that you run the codes in a virtual environment instead of the default machine setups.
+
+- install the most recent `virtualenv` library: `pip install virtualenv`
+- install the most recent python version satisfying python<=3.7: [python 3.7.9](https://www.python.org/downloads/release/python-379)
+- create a virtualenv in your windows user directory with python37 as default.
+```console
+virtualenv --python "path/to/python37/exefile" .venv
+```
+This creates a hidden .venv hidden diretory.
+- Now, activate the virtual environment:
+```console
+.venv\Scripts\activate
+```
+- Now, you are in the venv. Go to the requirements.txt directory of the github repo and install all of them: `pip install -r requirements.txt`
+- Now install Jupyter and run `jupyter notebook` and start experimenting with different files.
+
